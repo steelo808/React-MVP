@@ -2,6 +2,7 @@
   --heading-font:'Oswald', sans-serif;
   --main-font:'Open Sans', sans-serif;
   --background-color:#0b1321;
+  --header-background-color:#2e2e33;
   --card-background:#7d7c85;
   --accent-color:#655ec7;
   --text-color:#fdfdfd;
@@ -13,11 +14,11 @@
   padding:0;
   box-sizing:border-box;
   font-family:var(--main-font);
+  color:var(--text-color);
 }
 
 body{
   line-height:1.5;
-  color:var(--text-color);
   background-color: var(--background-color);
 }
 
@@ -29,7 +30,10 @@ a{
 
 h1,h2,h3,h4,h5,h6{
   font-family:var(--heading-font);
+  text-transform: uppercase;
 }
+
+
 
 .container{
   margin:0 auto;
@@ -40,4 +44,15 @@ h1,h2,h3,h4,h5,h6{
 .btn{
   border:none;
   background-color:var(--accent-color);
+}
+
+header{
+  background-color:var(--header-background-color);
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
 }
